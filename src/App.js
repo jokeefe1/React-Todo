@@ -38,7 +38,7 @@ class App extends Component {
             graphqlOperation(deleteNote, { input })
         );
         const deletedNoteId = result.data.deleteNote.id;
-        const updatedNotes = notes.filter(note => note.id !== deletedNoteId.id);
+        const updatedNotes = notes.filter(note => note.id !== deletedNoteId);
         this.setState({ notes: updatedNotes });
     };
 
