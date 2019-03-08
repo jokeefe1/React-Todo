@@ -1,13 +1,14 @@
 import Amplify from 'aws-amplify';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+// import App from './App';
 import aws_export from './aws-exports';
 import * as serviceWorker from './serviceWorker';
+import AppHooks from './AppHooks';
 
 Amplify.configure(aws_export);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppHooks />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
